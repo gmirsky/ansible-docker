@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-    - name: site | hello world
-      shell: echo "Hi! Ansible is working"
+    - name: "Hello world"
+      shell: echo "Hello! Ansible is working"
