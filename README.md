@@ -9,13 +9,13 @@
 ## Running the container
 
 ```bash
-docker run -v "${PWD}":/work:ro -v ~/.ansible/roles:/root/.ansible/roles -v ~/.ssh:/root/.ssh:ro ansible:latest ansible-playbook my_playbook.yml
+docker run -v "${PWD}":/work:ro -v ~/.ansible/roles:/root/.ansible/roles -v ~/.ssh:/root/.ssh:ro ansible-docker:latest ansible-playbook my_playbook.yml
 ```
 
 If not using Ansible roles you can omit that volume
 
 ```bash
-docker run -v "${PWD}":/work:ro -v ~/.ssh:/root/.ssh:ro ansible:latest ansible-playbook my_playbook.yml
+docker run -v "${PWD}":/work:ro -v ~/.ssh:/root/.ssh:ro ansible-dockerlatest ansible-playbook my_playbook.yml
 ```
 
 ## Volume Mappings
