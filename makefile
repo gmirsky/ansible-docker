@@ -1,8 +1,8 @@
 build:
-	docker build -t ansible:latest .
+	docker build -t ansible-docker:latest .
 run:
-	docker run ansible --version
+	docker run ansible-docker --version
 clean:
-	docker stop ansible || true
-	docker rm ansible || true
-	docker rmi ansible:latest
+	docker stop ansible-docker || true
+	docker rm ansible-docker || true
+	docker rmi ansible-docker:latest
